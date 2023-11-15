@@ -1,0 +1,23 @@
+<!-- frontend code for image processing -->
+<html>
+<title> Image Processing </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+<body>
+<center>
+
+<br>
+<h2>Image Processing</h2><hr>
+<form method="post" action="/" enctype="multipart/form-data"><br><br>
+	<h3>Select an Image for Rotating</h3>
+	<input class="btn btn-secondary" type="file" name="file">
+	<input class="btn btn-secondary" type="Submit" value="submit">
+    <img src="{{ url_for('display_image', filename=filename) }}">
+</form>
+
+
+</center>
+</body>
+</html>
+<!-- 45678 -->
